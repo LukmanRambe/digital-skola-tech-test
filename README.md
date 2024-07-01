@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Campflix - Lukman Rambe
+
+This is a project for Campaign Technical Assignment. A website to list all TV Shows from an API.
+
+## Technical Assignment Details ##
+
+### What to Make? ###
+
+![digital skola tech test design](https://github.com/LukmanRambe/digital-skola-tech-test/assets/66102026/f80838a0-ed78-4e52-9993-a28cbab36456)
+
+
+### Main Quest ###
+
+Please create a project with a layout like the image below, once finished then upload it to Heroku/vercel using Next.js. Note: Content can be filled in freely, the style doesn't have to be exact, what you have to pay attention to is that the web display can be responsive on all screen sizes (from mobile to desktop with high resolution though)
 
 ## Getting Started
 
-First, run the development server:
+To run this example, simply do:
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then you will see a simple web app page like this:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![image](https://github.com/LukmanRambe/digital-skola-tech-test/assets/66102026/5cb3a6bd-ff85-4723-999f-063565e670ea)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## IDE setup
 
-## Learn More
+VSCode is highly preferred. Please ensure you have installed these extensions:
 
-To learn more about Next.js, take a look at the following resources:
+- Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Useful Commands
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+#to run in dev mode
+npm run dev
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#to run in qa or production env. Expect to run this in docker
+npm run start
+```
