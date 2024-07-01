@@ -76,6 +76,7 @@ const Testimonies = () => {
           <article className="flex flex-col xl:flex-row gap-4">
             {testimonies.map((testimony) => (
               <TestimonyCard
+                key={testimony.id}
                 username={testimony.username}
                 imageUrl={testimony.imageUrl}
                 title={testimony.title}
