@@ -5,23 +5,28 @@ const useScreenSize = () => {
     width: number;
     height: number;
   }>({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
     const handleResize = () => {
-      setScreenSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
+      if (typeof window !== undefined) {
+        setScreenSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
     };
-
-    window.addEventListener('resize', handleResize);
+    if (typeof window !== undefined) {
+      window.addEventListener('resize', handleResize);
+    }
 
     // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('resize', handleResize);
+      if (typeof window !== undefined) {
+        window.removeEventListener('resize', handleResize);
+      }
     };
   }, []);
 
