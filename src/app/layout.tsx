@@ -5,6 +5,8 @@ import './globals.css';
 const poppins = Nunito_Sans({
   subsets: ['latin'],
   weight: ['200', '300', '500', '700', '900'],
+  display: 'swap',
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
