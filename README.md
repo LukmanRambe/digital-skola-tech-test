@@ -1,6 +1,6 @@
-# Campflix - Lukman Rambe
+# Digital Skola Tech Test - Lukman Rambe
 
-This is a project for Campaign Technical Assignment. A website to list all TV Shows from an API.
+This is a project for Digital Skola Technical Assignment.
 
 ## Technical Assignment Details ##
 
